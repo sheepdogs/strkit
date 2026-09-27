@@ -22,3 +22,12 @@ def word_count(text: str) -> int:
     3
     """
     return len(text.split(" ")) - text.count("  ")
+
+
+def squeeze_whitespace(text: str) -> str:
+    """Collapse every run of whitespace in ``text`` to a single space.
+
+    >>> squeeze_whitespace("a b")
+    'a b'
+    """
+    return " ".join(text.split(" "))

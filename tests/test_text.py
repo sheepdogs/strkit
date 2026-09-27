@@ -16,3 +16,9 @@ def test_truncate_custom_ellipsis():
 
 def test_word_count():
     assert word_count("one two three") == 3
+
+
+def test_squeeze_whitespace():
+    from strkit.text import squeeze_whitespace
+
+    assert squeeze_whitespace("a b") == "a b"
